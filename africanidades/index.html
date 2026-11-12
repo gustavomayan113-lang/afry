@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Afrofuturismo — O Mural do Futuro</title>
+<meta name="description" content="O que é afrofuturismo: linha do tempo, autores, glossário, leituras e um quiz fácil para testar o que você aprendeu.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" href="/static/img/favicon-512.png" type="image/png">
+</head>
+<body>
+
+<nav>
+  <a class="brand" href="/index.html" aria-label="Sankofuturo — início">
+    <span class="brand-word">Sankofuturo</span>
+  </a>
+  <div class="nav-links">
+    <a href="#manifesto">O que é</a>
+    <a href="#chaves">Chaves</a>
+    <a href="#linha">Linha do tempo</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#mural">Mural</a>
+    <a href="/edicoes.html">Edições</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <canvas id="stars"></canvas>
+  <div class="orb" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="kicker">um portal para o amanhã da diáspora</p>
+    <p class="hero-data">13 de novembro</p>
+    <h1 class="sr-only">O futuro já é nosso desde sempre.</h1>
+    <div class="hero-logo">
+      <span class="brand-logo-fallback">Sankofuturo</span>
+      <img class="hero-logo-img" src="/static/img/logo.jpeg" alt="Sankofuturo — o futuro já é nosso desde sempre" onerror="this.style.display='none'">
+    </div>
+    <p class="hero-sub">Afrofuturismo é imaginar mundos onde a cultura negra constrói suas próprias tecnologias, mitologias e destinos — no espaço, na terra e em todo tempo que ainda vai chegar.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#mural">Ver o mural</a>
+      <a class="btn btn-ghost" href="#manifesto">O que é isso?</a>
+      <a class="btn btn-ghost" href="#quiz">Testar o que sei</a>
+    </div>
+  </div>
+  <div class="pattern-strip" style="position:absolute; bottom:0; left:0; right:0;"></div>
+</header>
+
+<section id="manifesto" class="manifesto">
+  <div class="section-pad">
+    <div class="manifesto-grid">
+      <div>
+        <div class="section-head" style="margin-bottom:28px;">
+          <h2>Um movimento, não um gênero.</h2>
+        </div>
+        <p>O afrofuturismo nasceu do encontro entre a cultura negra e a especulação sobre o porvir. Da música cósmica de Sun Ra às naves ancestrais de Octavia Butler, das cidades imaginadas do cinema às sinfonias eletrônicas de Janelle Monáe — é a ideia de que o futuro também tem raiz, tambor e memória.</p>
+        <p>Aqui, tecnologia não substitui tradição: ela nasce dela. Circuitos que lembram padrões de tecido. Naves que carregam divindades. Cidades erguidas sobre baobás digitais — passado e porvir na mesma órbita.</p>
+        <p>E não é só ficção. O afrofuturismo aparece em games, séries, computação, design, arte urbana e até em engenharia — muitas das visões que pareciam utópicas hoje estão sendo construídas por autoras e autores negros, aqui na América Latina, na África e na diáspora.</p>
+      </div>
+      <div class="manifesto-mark">
+        <img class="manifesto-img" src="/static/img/imagem-poster-vermelho.jpeg" alt="Sankofuturo — pôster vermelho" decoding="async">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="chaves" class="keys adinkra">
+  <div class="section-pad">
+    <div class="section-head">
+      <h2>Como reconhecer uma obra afrofuturista</h2>
+      <p>Não existe fórmula, mas existem marcas. Toda narrativa afrofuturista costuma misturar pelo menos dois destes seis elementos — e é aí que o porvir deixa de ser distante e vira memória.</p>
+    </div>
+    <div class="key-grid">
+      <div class="key-card">
+        <span class="key-num">01</span>
+        <h3>Tecnologia ancestral</h3>
+        <p>Circuitos, robôs e inteligência artificial carregando símbolos, tambores e padrões de tecido. A máquina não apaga a tradição: ela é a tradição continuando.</p>
+      </div>
+      <div class="key-card">
+        <span class="key-num">02</span>
+        <h3>Mitologia própria</h3>
+        <p>Deuses, ancestrais e espíritos que acompanham a viagem. O universo tem dono — e esse dono tem nome e história.</p>
+      </div>
+      <div class="key-card">
+        <span class="key-num">03</span>
+        <h3>Viagem e travessia</h3>
+        <p>Naves, exílio e a travessia forçada do tráfico, reimaginada como rota escolhida. O passo forçado do passado se transforma em destino.</p>
+      </div>
+      <div class="key-card">
+        <span class="key-num">04</span>
+        <h3>Corpo reinventado</h3>
+        <p>Cyborgues, próteses e corpos que se refazem. O corpo negro é território de invenção, nunca de limite.</p>
+      </div>
+      <div class="key-card">
+        <span class="key-num">05</span>
+        <h3>Futuro como direito</h3>
+        <p>Mundos onde a liberdade não é promessa de discurso, é ponto de partida. O amanhã é contado por quem sempre soube sonhar.</p>
+      </div>
+      <div class="key-card">
+        <span class="key-num">06</span>
+        <h3>Ancestralidade digital</h3>
+        <p>A memória organizada como nuvem, o arquivo familiar virado código, a história reescrita por quem sempre foi excluído dela.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="linha" class="timeline-section">
+  <div class="section-pad">
+    <div class="section-head">
+      <h2>Linha do tempo do afrofuturismo</h2>
+      <p>Mais de meio século de histórias que foram sonhadas antes de existirem. Cada marco abaixo já foi imaginação — e boa parte virou disco, livro, HQ, filme e tecnologia.</p>
+    </div>
+
+    <div class="timeline-grid">
+      <ol class="timeline">
+        <li class="tl-item">
+          <div class="tl-year">1969</div>
+          <div class="tl-body">
+            <h3>Sun Ra deixa os Estados Unidos</h3>
+            <p>O mestre do cosmos parte com seu Astral Relic Temple e o discurso de que o universo inteiro cabe dentro de uma frase musical. As turnês europeias abrem caminho para um novo público — e para o cinema.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-year">1970</div>
+          <div class="tl-body">
+            <h3>Um disco da NASA com a marca de Sun Ra</h3>
+            <p>Uma das peças gravadas no <em>Interplanetary Highlights Souvenir Disc</em> da missão Apollo 14 é justamente <em>Space Is the Place</em>. O afrofuturismo, por um instante, entrou oficialmente no espaço.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-year">1973</div>
+          <div class="tl-body">
+            <h3>George Clinton e a magia negra do funk</h3>
+            <p>Parliament-Funkadelic lança <em>Clones of Dr. Funkenstein</em> e prepara o caldo do funk afrofuturista: alienígenas, sintetizadores e uma líder negra capaz de governar planetas.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-year">1974</div>
+          <div class="tl-body">
+            <h3>O filme <em>Space Is the Place</em> é lançado</h3>
+            <p>A música cósmica vira longa-metragem: um homem se transforma em dio planetário e mostra que o futuro pode ser livre, negro e imediato.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-year">1984</div>
+          <div class="tl-body">
+            <h3>O Exterminador do Futuro</h3>
+            <p>James Cameron transforma Sarah Connor em ciborgue e põe um corpo montado por máquinas no centro da história. A ideia de que o corpo pode ser reconstruído em metal entra na cabeça de milhões de pessoas.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-year">1987</div>
+          <div class="tl-body">
+            <h3>Octavia Butler publica <em>Parable of the Sower</em></h3>
+            <p>No mesmo ano sai <em>Xenogenesis</em>, a trilogia que termina no planeta Oankali. Uma narrativa negra, dura e sem atalho: sobreviver e recomeçar do zero, sem rosto pronto.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-year">1993</div>
+          <div class="tl-body">
+            <h3>Samuel R. Delany responde ao futuro dos outros</h3>
+            <p>Em <em>The Seven Moons of Ma'adim</em>, o autor reimagina <em>Um Homem Caiu na Terra</em> e reconstrói a história em volta do planeta a partir de outras vozes.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-year">1998</div>
+          <div class="tl-body">
+            <h3>Nalo Hopkinson escreve na velocidade máxima</h3>
+            <p><em>Brown Girl in the Ring</em> e <em>Midnight Robber</em> inauguram o cyberpunk caribenho: redes neurais, magia, diáspora e memória familiar no mesmo planeta.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-year">2010</div>
+          <div class="tl-body">
+            <h3>Janelle Monáe lança <em>The ArchAndroid</em></h3>
+            <p>Uma opereta conceitual de 18 faixas sobre Cindi Mayweather, uma androide fugitiva num futuro que tenta apagar o que ela se lembra de ser. O universo ganhou vida em clipes, ao vivo e, anos depois, no filme <em>Dirty Computer</em> (2018).</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-year">2013</div>
+          <div class="tl-body">
+            <h3><em>Black Panther</em> chega às bancas</h3>
+            <p>A graphic novel de Christopher Priest mostra T'Challa assumindo o trono de Wakanda, a primeira nação africana com superpoderes, e entrando no jogo político global.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-year">2016</div>
+          <div class="tl-body">
+            <h3>O termo ganha densidade teórica</h3>
+            <p><em>The Afrofuturism Reader</em> reúne ensaios que ajudam a definir o movimento: tecnologia, estética, política e a imaginação como ferramenta de resistência.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-year">2018</div>
+          <div class="tl-body">
+            <h3><em>Pantera Negra</em> no cinema</h3>
+            <p>Ryan Coogler leva Wakanda às telas e a diáspora africana ao Oscar. A nação imaginada da África vira um sucesso mundial de bilheteria.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-year">Hoje</div>
+          <div class="tl-body">
+            <h3>O afrofuturismo virou rotina</h3>
+            <p>Está em games, séries, música, moda, interfaces, design, política e ciência — cada vez mais longe da ficção e mais perto do nosso presente.</p>
+          </div>
+        </li>
+      </ol>
+      <div class="timeline-poster">
+        <img class="timeline-poster-img" src="/static/img/imagem-poster-ciano.jpeg" alt="Sankofuturo — pôster ciano" decoding="async">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="nomes" class="people">
+  <div class="section-pad">
+    <div class="section-head">
+      <h2>Quem abriu o caminho</h2>
+      <p>Seis nomes que construíram o movimento. Todos, de algum jeito, partiram da mesma pergunta: como seria o mundo se quem foi deixado para trás assumisse o comando da máquina?</p>
+    </div>
+    <div class="people-grid">
+      <div class="person-card">
+        <h3>Sun Ra</h3>
+        <p class="person-years">1914–1993 · Jazz cósmico</p>
+        <p>Músico, compositor e navegante do tempo. Colocou o jazz, o Afeganistão e o Egito dentro de um mesmo compasso. Foi o primeiro a dizer que o universo inteiro é uma bateria de percussão.</p>
+      </div>
+      <div class="person-card">
+        <h3>George Clinton</h3>
+        <p class="person-years">1941–2016 · Funk</p>
+        <p>Com Parliament-Funkadelic criou um universo paralelo de alienígenas, poderes e magia negra. O funk vira nave: a Muthership, a transportadora cósmica do grupo, levava o universo inteiro nas turnês.</p>
+      </div>
+      <div class="person-card">
+        <h3>Samuel R. Delany</h3>
+        <p class="person-years">1942– · Ficção científica</p>
+        <p>Autor de <em>Nova</em> e <em>Dhalgren</em>, foi dos primeiros a escrever ficção científica em grande escala, linguagem e ambição, usando a imaginação como via de debate sobre o presente.</p>
+      </div>
+      <div class="person-card">
+        <h3>Octavia Butler</h3>
+        <p class="person-years">1947–2006 · Romance e ficção científica</p>
+        <p>A grande mãe do afrofuturismo. Personagens negras, vulneráveis e determinadas; mundos hostis que ainda assim precisam ser habitados; e a palavra <em>desterrar</em> para nomear a travessia do exílio.</p>
+      </div>
+      <div class="person-card">
+        <h3>Nalo Hopkinson</h3>
+        <p class="person-years">1960– · Cyberpunk</p>
+        <p>Nasceu no Canadá, com raízes na Guiana, no Haiti e entre os Yorubá. <em>Brown Girl in the Ring</em> mistura xangô, redes neurais e diáspora caribenha.</p>
+      </div>
+      <div class="person-card">
+        <h3>Janelle Monáe</h3>
+        <p class="person-years">1986– · Música e cinema</p>
+        <p>Construiu a Metropolis Suite ao longo de álbuns e curtas-metragens, com Cindi Mayweather, Wondaland e um afrofuturismo popular feito para dançar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="glossary" class="glossary adinkra">
+  <div class="section-pad">
+    <div class="section-head">
+      <h2>Dicionário afrofuturista</h2>
+      <p>Seis palavras que aparecem em toda conversa sobre o assunto — explicadas do jeito mais direto possível.</p>
+    </div>
+    <div class="term-grid">
+      <div class="term">
+        <h3>Afrofuturismo</h3>
+        <p>A prática de imaginar, descrever e construir futuros a partir da experiência da cultura negra, misturando ciência, magia, história e ancestralidade.</p>
+      </div>
+      <div class="term">
+        <h3>Diáspora</h3>
+        <p>A dispersão de um povo longe da sua terra natal. No afrofuturismo, a diáspora deixa de ser só ferida e vira um mapa de possibilidades.</p>
+      </div>
+      <div class="term">
+        <h3>Desterrar</h3>
+        <p>Termo que ficou famoso por Octavia Butler em <em>Parable of the Sower</em>: sair de um lugar e, mesmo assim, continuar levando o mundo — e a si mesmo — junto.</p>
+      </div>
+      <div class="term">
+        <h3>Nome de batismo</h3>
+        <p>Na ficção, a história de origem do personagem: a lenda que explica de onde ele veio e por que existe.</p>
+      </div>
+      <div class="term">
+        <h3>Look</h3>
+        <p>Presença e estilo. No afrofuturismo o visual é documento: cada padrão, trança ou adereço carrega um pedaço de memória.</p>
+      </div>
+      <div class="term">
+        <h3>Adinkra</h3>
+        <p>Símbolos dos akan (Gana) que viajam em tecidos, paredes e agora em circuitos. A prova de que código também é herança cultural.</p>
+      </div>
+    </div>
+    <div class="glossary-poster">
+      <img class="glossary-poster-img" src="/static/img/abreviação-de-africanidades.jpeg" alt="Africanidades — abreviação do projeto" decoding="async">
+    </div>
+  </div>
+</section>
+
+<section id="leituras" class="readings">
+  <div class="section-pad">
+    <div class="section-head">
+      <h2>Leituras, telas e som</h2>
+      <p>Se você só puder começar por um lugar, comece por qualquer um destes.</p>
+    </div>
+    <div class="reading-cols">
+      <div class="reading-col">
+        <h3>Livros</h3>
+        <ul>
+          <li><em>Parable of the Sower</em> — Octavia Butler</li>
+          <li><em>Patternist</em> — Octavia Butler</li>
+          <li><em>Brown Girl in the Ring</em> — Nalo Hopkinson</li>
+          <li><em>Midnight Robber</em> — Nalo Hopkinson</li>
+          <li><em>The Fifth Season</em> — N. K. Jemisin</li>
+          <li><em>Ancillary Justice</em> — Ann Leckie</li>
+        </ul>
+      </div>
+      <div class="reading-col">
+        <h3>Filmes e séries</h3>
+        <ul>
+          <li><em>Space Is the Place</em> (1974)</li>
+          <li><em>O Exterminador do Futuro</em> (1984)</li>
+          <li><em>Pantera Negra</em> (2018)</li>
+          <li><em>Pantera Negra: Wakanda Forever</em> (2022)</li>
+          <li><em>Black Mirror</em> — episódios afrofuturistas</li>
+          <li><em>Kindred</em> — série adaptada de Octavia Butler</li>
+        </ul>
+      </div>
+      <div class="reading-col">
+        <h3>Música e som</h3>
+        <ul>
+          <li><em>Space Is the Place</em> — Sun Ra</li>
+          <li><em>Clones of Dr. Funkenstein</em> — Parliament-Funkadelic</li>
+          <li><em>The ArchAndroid</em> — Janelle Monáe</li>
+          <li><em>Roots</em> — Sepultura</li>
+          <li><em>Black Panther: The Album</em> (2018)</li>
+          <li>Playlists de afrobeat e afro-eletrônica</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="quiz" class="quiz-section">
+  <div class="section-pad">
+    <div class="section-head">
+      <h2>Quiz: teste o que você aprendeu</h2>
+      <p>Oito perguntas fáceis, sem pegadinha. Clique em uma alternativa: se ela estiver certa fica <strong class="ok-text">verde</strong>, se estiver errada fica <strong class="err-text">vermelha</strong> — e o site mostra qual era a resposta certa.</p>
+    </div>
+
+    <div class="quiz-grid">
+      <div class="quiz-shell" id="quiz">
+        <div class="quiz-bar">
+          <span class="quiz-step" id="quiz-step">Pergunta 1 de 8</span>
+          <div class="quiz-progress"><span id="quiz-progress-fill"></span></div>
+          <span class="quiz-score-live" id="quiz-score-live">0 acertos</span>
+        </div>
+
+        <h3 class="quiz-question" id="quiz-question">Carregando…</h3>
+
+        <div class="quiz-options" id="quiz-options"></div>
+
+        <p class="quiz-feedback" id="quiz-feedback"></p>
+
+        <div class="quiz-actions">
+          <button type="button" class="btn btn-primary btn-sm" id="quiz-next" disabled>Próxima pergunta</button>
+          <span class="quiz-progress-note" id="quiz-note"></span>
+        </div>
+      </div>
+      <div class="quiz-poster">
+        <img class="quiz-poster-img" src="/static/img/imagem-poster-preta.jpeg" alt="Sankofuturo — pôster preto" decoding="async">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mural" class="wall adinkra">
+  <div class="section-pad">
+    <div class="section-head">
+      <h2>O Mural do Futuro</h2>
+      <p>Escreva uma palavra, uma imagem, uma visão que more no seu afrofuturismo. Ela entra direto no mural, para quem estiver por aqui.</p>
+    </div>
+
+    <figure class="symbols">
+      <div class="symbols-row">
+        <img class="symbol" src="/static/img/simbolo-1.png" width="99" height="508"
+             alt="Símbolo 1 do Africanidades" loading="lazy" decoding="async">
+        <img class="symbol" src="/static/img/simbolo-2.png" width="363" height="378"
+             alt="Símbolo 2 do Africanidades" loading="lazy" decoding="async">
+        <img class="symbol" src="/static/img/simbolo-3.png" width="156" height="865"
+             alt="Símbolo 3 do Africanidades" loading="lazy" decoding="async">
+      </div>
+      <figcaption class="symbols-caption">Os símbolos do Africanidades</figcaption>
+    </figure>
+
+    <div class="wall-layout">
+      <form class="wall-form" id="wall-form">
+        <h3>Deixe sua marca</h3>
+        <p class="hint">Um verso, uma cena, um objeto do futuro que você imagina. Não precisa ser perfeito — precisa ser seu.</p>
+
+        <label for="f-name">Nome (opcional)</label>
+        <input type="text" id="f-name" maxlength="40" placeholder="Como quer assinar?">
+
+        <label for="f-text">Sua visão</label>
+        <textarea id="f-text" maxlength="220" placeholder="Ex.: um tambor que transmite dados pelo bairro inteiro..." required></textarea>
+        <div class="char-count" id="char-count">220 caracteres restantes</div>
+
+        <div class="submit-row">
+          <button type="submit" class="btn btn-primary" id="submit-btn">Enviar ao mural</button>
+          <span class="form-msg" id="form-msg"></span>
+        </div>
+
+        <p class="visibility-note">O mural é compartilhado: sua contribuição fica visível para todas as pessoas que abrirem esta página.</p>
+      </form>
+
+      <div class="wall-grid" id="wall-grid">
+        <p class="wall-status">Convocando as vozes do mural…</p>
+      </div>
+    </div>
+
+    <p class="wall-admin-msg form-msg" id="wall-msg" role="status" aria-live="polite"></p>
+  </div>
+</section>
+
+<div class="pattern-strip"></div>
+<footer>
+  <div class="brand">
+    <span class="brand-logo-slot brand-logo-slot--sm">
+      <span class="brand-logo-fallback">Sankofuturo</span>
+      <img class="brand-logo" src="/static/img/logo.jpeg" alt="Sankofuturo" onerror="this.style.display='none'">
+    </span>
+  </div>
+  <p>Feito com código, tambores e estrelas.</p>
+</footer>
+
+<script src="/static/config.js"></script>
+<script src="/static/auth.js"></script>
+<script src="/static/stars.js"></script>
+<script src="/static/script.js"></script>
+<script src="/static/trilha.js"></script>
+</body>
+</html>

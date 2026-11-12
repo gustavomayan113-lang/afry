@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edições Passadas — AfroFuturismo Mural</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/img/favicon-512.png" type="image/png">
+</head>
+<body>
+
+<nav>
+  <a class="brand" href="/index.html" aria-label="Sankofuturo — início">
+    <span class="brand-word">Sankofuturo</span>
+  </a>
+  <div class="nav-links">
+    <a href="/index.html">Início</a>
+    <a href="/edicoes.html" class="active">Edições Passadas</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <canvas id="stars"></canvas>
+  <div class="orb" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="kicker">um arquivo visual da diáspora futurista</p>
+    <h1 class="hero-title">Edições <em>passadas</em></h1>
+    <p class="hero-sub">Fotos, imagens e registros das celebrações, eventos e encontros que moldaram nosso universo afrofuturista. Cada ano, uma nova constelação de ideias e visões.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#galeria">Ver a galeria</a>
+      <a class="btn btn-ghost" href="/index.html">Voltar ao mural</a>
+    </div>
+  </div>
+</header>
+
+<section id="galeria" class="gallery adinkra">
+  <div class="section-pad">
+    <div class="section-head">
+      <h2>Edições ano a ano</h2>
+      <p>Cada edição tem o seu próprio bloco. Escolha o ano da edição, envie as fotos — e elas ficam guardadas dentro daquele ano, prontas para a próxima.</p>
+    </div>
+
+    <div class="gallery-toolbar">
+      <button class="btn btn-primary btn-sm" id="add-photo-btn">
+        <span id="add-icon">🔒 Adicionar foto</span>
+      </button>
+      <span class="form-msg" id="gallery-msg"></span>
+      <div class="year-nav" id="year-nav"></div>
+    </div>
+
+    <div class="gallery-form-card" id="gallery-form-card" style="display:none;">
+      <h3 id="gallery-form-title">Adicionar nova foto</h3>
+      <p class="hint">Selecione a imagem, informe o ano da edição e uma legenda. Se o ano ainda não existir, o bloco dele é criado automaticamente.</p>
+
+      <form class="gallery-form" id="gallery-form">
+        <label for="g-year">Ano da edição</label>
+        <input type="number" id="g-year" min="1900" max="2100" list="year-suggestions" placeholder="Ex.: 2024" required>
+        <datalist id="year-suggestions"></datalist>
+        <p class="field-hint" id="year-hint">Edições que já existem aparecem aqui.</p>
+
+        <label for="g-file">Imagem do dispositivo</label>
+        <input type="file" id="g-file" accept="image/*" required>
+
+        <label for="g-caption">Legenda (opcional)</label>
+        <input type="text" id="g-caption" maxlength="120" placeholder="Conteúdo da foto...">
+
+        <div class="submit-row">
+          <button type="submit" class="btn btn-primary" id="submit-btn">Enviar foto</button>
+          <span class="form-msg" id="form-msg"></span>
+        </div>
+
+        <button type="button" class="btn btn-ghost btn-sm" id="cancel-add" style="margin-top:14px;">Cancelar</button>
+      </form>
+    </div>
+
+    <div class="gallery-blocks" id="gallery-blocks">
+      <p class="wall-status">Carregando o arquivo de fotos…</p>
+    </div>
+  </div>
+</section>
+
+<div class="pattern-strip"></div>
+<footer>
+  <div class="brand">
+    <span class="brand-logo-slot brand-logo-slot--sm">
+      <span class="brand-logo-fallback">Sankofuturo</span>
+      <img class="brand-logo" src="/static/img/logo.jpeg" alt="Sankofuturo" onerror="this.style.display='none'">
+    </span>
+  </div>
+  <p>Feito com código, tambores e estrelas.</p>
+</footer>
+
+<script src="/static/config.js"></script>
+<script src="/static/auth.js"></script>
+<script src="/static/stars.js"></script>
+<script src="/static/gallery.js"></script>
+<script src="/static/trilha.js"></script>
+</body>
+</html>

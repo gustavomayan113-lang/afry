@@ -1,0 +1,8 @@
+origem: static/img
+ano: 2024
+seed: 2024
+selecionadas: 200
+enviadas: 1
+
+linhas gravadas: 1
+Africanidades_UBUNTU_CESCM-3880.jpg -> https://aabpywhtailidzwngxpz.supabase.co/storage/v1/object/public/gallery/2024/Africanidades_UBUNTU_CESCM-3880.jpg
